@@ -62,7 +62,7 @@
             </div>
             <div class="navbar-end mr-8">
                 <div class="indicator -top-5 -right-8">
-                    <span id="cart-count" class="indicator-item font-semibold cart-count">12</span>
+                    <span id="cart-count" class="indicator-item font-semibold cart-count"></span>
                 </div>
                 <a><i class="fa-solid text-2xl fa-cart-shopping"></i>
                    
@@ -132,19 +132,23 @@
 
 
     <!-- trending products section  -->
-    <section>
-        <div class="mt-16">
-           <h1 class="text-3xl font-bold mb-5 mt-5 ml-30 md:mx-50">Trending Now</h1>
-        </div>
+<section>
+    <div class="mt-16">
+        <h1 class="text-3xl font-bold mb-5 mt-5 ml-30 md:mx-50">Trending Now</h1>
+    </div>
 
-        <!-- product card section  -->
-        <div class="flex justify-center">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 ml-30 md:mx-50" id="trending-container">
-                <!-- product card  -->
-                
-            </div>
+    <!-- product card section  -->
+    <div class="flex justify-center">
+        <div 
+            class="grid grid-cols-1 md:grid-cols-3 gap-10 ml-30 md:mx-50 
+                   auto-rows-fr items-stretch w-full"
+            id="trending-container">
+            <!-- product card  -->
         </div>
-    </section>
+    </div>
+</section>
+
+
 
 
     <!-- footer section  -->
