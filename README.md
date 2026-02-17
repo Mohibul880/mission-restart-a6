@@ -1,85 +1,16 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT (SwiftCart E-Commerce)
+## 1. What is the difference between null and undefined?
+#### null হলো এসাইন করা ভ্যালু যা দ্বারা বুঝানো হয় কোনো ভ্যালু নেই এখানে। আর undefined হলো ভ্যারিয়েবল ডিকলার করা হয়েছে কিন্তু কোনো ভ্যালু এসাইন করা হয় নি।
+
+## 2. What is the use of the map() function in JavaScript? How is it different from forEach()?
+#### map() ফাংশন এক্সিটিং কোনো array থেকে নতুন একটা array তৈরি করে। এক্সিটিং array কে কোনো মডিফিকেশন করা ছাড়া। map() ফাংশন ডাটা ট্রান্সফরমেশন, array of objects ম্যানুপুলেশন, UI তে ডাটা রেন্ডার করার জন্য ব্যাবহার করা হয়। map() যেখানে এক্সিটিং array থেকে কোনো মডিফিকেশন ছাড়াই নতুন array রিটান করে সেখানে forEach() প্রতিটি আইটেমের জন্য একটা ফাংশন এক্সিকিউট এর কাজ করে কোনো array রিটান করে না।
 
 
-## Repository: Create your own public repository and submit the link.
+## 3. What is the difference between == and ===?
+#### জাভাস্ক্রিপ্টে == ২ টা সমান চিহ্ণ দ্বারা loosely equal বুঝানো হয়। মানে 1 == "1" => TRUE রিটার্ন করবে। আর === ৩ টা সমান চিহ্ণ দ্বরা Strictly Equal বুঝানো হয়। মানে 1 === "1" => FALSE রিটার্ন করবে।
 
----
-## 🛍️ API Endpoints
----
-1. Get 🛍️ All Products
-```bash
-https://fakestoreapi.com/products
-```
 
-2. Get 🛍️ All Categories
-```bash
-https://fakestoreapi.com/products/categories
-```
+## 4. What is the significance of async/await in fetching API data?
+#### async/await ব্যবহার করে asynchronous কোড লেখা যায় কিন্তু সেটা synchronous স্টাইলে দেখা যায়। async হলো একটা ফাংশনকে asynchronous ভাবে কাজ করতে সাহায্য করে এবং এটা একটি promise রিটার্ন করে। await অংশ কোড এক্সিকিউশন থামিয়ে রাখে যতক্ষন না পর্যন্ত promise টি resove হয়। 
 
-3. Get 🛍️ Products by Category
-```bash
-https://fakestoreapi.com/products/category/${category}
-```
-
-Example:
-```bash
-https://fakestoreapi.com/products/category/jewelery
-```
-
-4. Get 🛍️ Single Product Detail
-```bash
-https://fakestoreapi.com/products/${id}
-```
-
-Example:
-```bash
-https://fakestoreapi.com/products/1
-```
-
----
-
-## 🎯 Project Specifications (UI/UX)
-
-#### 1) Navbar
-- Website **logo/name** ("SwiftCart") on the **left**
-- **Menu items** (Home, Products, About, Contact) in the **center**
-- **Cart Icon/Button** on the **right** (showing item count is a bonus)
-
-#### 2) Banner / Hero Section
-- A **background image** (related to shopping/fashion/electronics)
-- A **title** (e.g., "Best Collection For You") and **subtitle**
-- A **centered button** (e.g., "Shop Now")
-
-#### 3) Features / Why Choose Us
-- **Section heading**
-- **3-4 items** highlighting features like "Fast Delivery", "24/7 Support", "Secure Payment", etc. (Icon + Title + Short Text)
-
-#### 4) Trending / Top Rated Section
-- Show **3 top-rated products** (you can filter by rating or just pick the first 3) based on API data or hardcoded for layout practice.
-
-#### 5) Newsletter & Footer
-- **Newsletter Subscription Form**: Email input + Subscribe button.
-- **Footer** with copyright info, social links, and quick links.
-
-#### 6) Responsiveness
-- Website must be **mobile responsive** 
-
----
-#### 7) Create a README file to answer the following questions-
-
-> **⚠️ Warning:** Do not use any AI tools to answer these questions. You must write the answers in **Bangla**.
-
-#### 1) What is the difference between `null` and `undefined`?
-null is an assigned value which means there is no value here. And undefined is a variable declared but no value is assigned.
-
-#### 2) What is the use of the `map()` function in JavaScript? How is it different from `forEach()`?
-The map() function creates a new array from an existing array. Without making any modification to the existing array. The map() function is used for data transformation, array of objects manipulation, and rendering data in UI. While map() returns a new array from the existing array without any modification, forEach() does not return an array by executing a function for each item.
-
-#### 3) What is the difference between `==` and `===`?
-In JavaScript, == is loosely understood as equal by two equal signs. This means that 1 == "1" => will return TRUE. And === is used to mean Strictly Equal. This means 1 === "1" => will return FALSE.
-
-#### 4) What is the significance of `async`/`await` in fetching API data?
-Using async/await, asynchronous code can be written but it looks like synchronous style. async allows a function to work asynchronously and it returns a promise. The await part stops the code execution until the promise is resolved.
-
-#### 5) Explain the concept of Scope in JavaScript (Global, Function, Block).
-Scope means which part of the code of a variable, function or object has access to. Scope is generally of three types. Global Scope, Functional or Local Scope and Block Scope.
+## 5. Explain the concept of Scope in JavaScript (Global, Function, Block).
+####  Scope দ্বারা বুঝানো হয় কোনো variable, function কিংবা object এর কোডের কোন অংশটুকুর একসেস আছে।  Scope সাধারনত তিন ধরনের হয়। Global Scope, Functional or Local Scope and Block Scope. Global Scope এ একটি ভ্যারিয়েবল কোডের যেকোনো জায়গা থেকে একসেস করা যায়। Functional or Local Scope এ ভ্যারিয়েবল ফাংশন এর মধ্যে ডিকলার করা হয় যা শুধু ঐ ফাংশনের মধ্যেই একসেস করা যায় এর বাইরে একসেস করা যায় না। Block Scope এ ভ্যারিয়েবল ডিকলার করা হয় let or const দ্বারা। এটা { } এর মধ্যে ডিকলার করা হয় এবং ওই ব্লকের মধ্যেই একসেস করা যায়।
